@@ -30,9 +30,9 @@ jobs:
       run:
         python --version
 
-    - name: Install ddependencies
+    - name: Install dependencies
       run: |
-        python -m pip install -upgrade pip
+        python -m pip install --upgrade pip
         if [-tf requirements.txt; then pip install -r requirements.txt; fi
     
       
