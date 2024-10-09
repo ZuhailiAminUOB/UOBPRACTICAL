@@ -7,4 +7,8 @@ on:
 jobs:
   builds:
     runs-on: ubuntu.16.04
-  
+
+    steps:
+    - name: greeting steps
+      run:
+        echo "Hello hansum"
