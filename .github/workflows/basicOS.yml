@@ -13,3 +13,10 @@ jobs:
     
       run:
         echo "Hello hansum"
+
+    - name: Checkout my codes
+      uses: actions/checkout@v4
+    - name: print content
+      run:
+        ls
+        
