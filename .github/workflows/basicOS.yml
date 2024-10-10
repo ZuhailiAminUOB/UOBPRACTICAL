@@ -48,3 +48,11 @@ jobs:
         ls
         cd hiddenfolder
         ls
+
+    - if: ${{ success() }}
+      name: discord
+      uses: sebastianpopp/discord-action@releases/v2
+      with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        message: Hello there. My name Zuhaili. ${{ github.repository }} has been successfullly deployed.
+
